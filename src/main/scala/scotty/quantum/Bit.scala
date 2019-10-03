@@ -49,15 +49,11 @@ object Bit {
 }
 
 object One {
-  val floatValue = Array(0f, 0f, 1f, 0f)
-
   def apply(): One = One(None)
   def apply(label: String): One = One(Some(label))
 }
 
 object Zero {
-  val floatValue = Array(1f, 0f, 0f, 0f)
-
   def apply(): Zero = Zero(None)
   def apply(label: String): Zero = Zero(Some(label))
 }
