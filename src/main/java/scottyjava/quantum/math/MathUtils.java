@@ -2,7 +2,6 @@ package scottyjava.quantum.math;
 
 import scottyjava.quantum.bit.Bit;
 import scottyjava.quantum.bit.Zero;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

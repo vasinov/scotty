@@ -1,6 +1,7 @@
 package scottyjava.quantum.bit;
 
 import scottyjava.Labeled;
+import scottyjava.quantum.math.Complex;
 
 public abstract class Bit extends Labeled<String> {
     public static Bit fromString(String number) {
@@ -9,4 +10,8 @@ public abstract class Bit extends Labeled<String> {
     }
 
     public abstract int toInt();
+
+    public abstract Complex[] toComplexArray();
+
+    public abstract float[] toVector();
 }
