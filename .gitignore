@@ -1,10 +1,19 @@
 .idea
 /target
-/project
+/project/*
 !/project/plugins.sbt
+!/project/build.properties
 /out
 .ipr
 
 .vscode
 .bloop
 .metals
+
+node_modules/
+docs/generated/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs-build/target/
+docs-build/project/target/
+docs-build/project/project/

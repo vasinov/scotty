@@ -1,14 +1,14 @@
 import xerial.sbt.Sonatype._
 import ReleaseTransformations._
 
-val defaultScalaVersion = "2.13.0"
+val defaultScalaVersion = "2.13.16"
 
-ThisBuild / name := "scotty"
+name := "scotty"
 ThisBuild / organization := "xyz.entangled"
 ThisBuild / scalaVersion := defaultScalaVersion
 ThisBuild / crossScalaVersions := Seq(
   defaultScalaVersion,
-  "2.12.8"
+  "2.12.20"
 )
 
 val scalaTestVersion = "3.0.8"
@@ -30,9 +30,9 @@ publishMavenStyle := true
 publishConfiguration := publishConfiguration.value.withOverwrite(true)
 publishLocalConfiguration := publishLocalConfiguration.value.withOverwrite(true)
 
-licenses := Seq("APL2" -> url("http://www.apache.org/licenses/LICENSE-2.0.txt"))
+licenses := Seq("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0.txt"))
 
-sonatypeProjectHosting := Some(GitHubHosting("entangled-xyz", "scotty", "vasinov@me.com"))
+sonatypeProjectHosting := Some(GitHubHosting("vasinov", "scotty", "vasinov@me.com"))
 
 developers := List(
   Developer(id="vasinov", name="Vasily Vasinov", email="vasinov@me.com", url=url("https://www.vasinov.com"))

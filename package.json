@@ -1,0 +1,21 @@
+{
+  "name": "scotty-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:generate": "cd docs-build && sbt mdoc",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs && python3 scripts/check_links.py",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "4.3.2",
+    "vitepress": "1.6.4"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "overrides": {
+    "vite": "6.4.4"
+  }
+}
