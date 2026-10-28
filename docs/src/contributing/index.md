@@ -20,7 +20,7 @@ Open the preview at `http://localhost:4173/scotty/`. The build checks local link
 
 ## Edit documentation
 
-Edit Markdown in `docs/src/`. The default VitePress theme is configured in `docs/.vitepress/config.mts`; there is no custom theme. Runnable Scala fences use `scala mdoc:silent`; setup and assertions can use `scala mdoc:invisible`. Fences on one page share a session; use `mdoc:reset:silent` to start an independent example.
+Edit Markdown in `docs/src/`. The default VitePress theme is configured in `docs/.vitepress/config.mts`; there is no custom theme. `package.json` pins VitePress and overrides its Vite dependency to a patched version; keep that override until a stable VitePress release supplies the fix. Runnable Scala fences use `scala mdoc:silent`; setup and assertions can use `scala mdoc:invisible`. Fences on one page share a session; use `mdoc:reset:silent` to start an independent example.
 
 `docs-build/` is a separate sbt build using the published `xyz.entangled:scotty_2.13:0.6.0` dependency. This keeps the release documentation honest even when development sources change. Update that dependency and the documented version together for a future release.
 
